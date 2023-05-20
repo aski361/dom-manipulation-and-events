@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+
+
+        const p = document.createElement('p');
+
+        p.textContent = "Hey I'm red p";
+
+        p.style.cssText= 'color:red;'
+
+        document.body.appendChild(p);
+
+
+        const h3 = document.createElement('h3');
+
+        h3.textContent = "Hi I'm blue h3 ";
+
+        h3.setAttribute('style','color: blue;');
+
+        document.body.appendChild(h3);
+
+        const div = document.createElement('div');
+
+        div.setAttribute('style','boder: 2px solid black;background-color: pink;height: 450px');
+
+        document.body.appendChild(div);
+
+        const qDiv = document.querySelector('div');
+
+        const divH1 = document.createElement('h1');
+        const divP = document.createElement('p');
+
+        divH1.textContent = 'Im in div';
+        divP.textContent = 'Im in div too';
+
+        div.appendChild(divH1);
+        div.insertBefore(divP,divH1)
+
+    </script>
+</body>
+</html>
